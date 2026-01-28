@@ -11,3 +11,6 @@ A responsive weather dashboard built using HTML, CSS, and JavaScript.
 - HTML
 - CSS
 - JavaScript
+
+## Live Demo  
+https://antara-weather-app.netlify.app
