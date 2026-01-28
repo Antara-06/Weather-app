@@ -1,0 +1,168 @@
+*{ 
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Poppins', sans-serif;
+}
+/* body{
+    overflow-x:hidden;
+}  */
+.container{ 
+    width: 100vw; 
+    height: 100vh; 
+    display: flex; 
+}
+.weather-info{ 
+    width: 35%; 
+    height: 100vh; 
+    background-color:white; 
+}
+.other-factors{
+    width:80%; 
+    height: 100vh; 
+    background-color: #efefef; 
+} 
+.weather-cnt{ 
+    /* height: 85%; 
+    width: 75%; */ 
+    text-align: center; 
+    /* margin: 30px 65px 0px 45px; */ 
+    margin-top: 30px; 
+} 
+.cnt-elements{ 
+    margin-bottom: 36px; 
+    font-size: 14px;
+}
+.factors-cnt{ 
+    width: 90%; 
+    height: 80%; 
+    margin: 30px 45px 0px 45px; 
+} 
+#today{ 
+    margin-bottom: 30px; 
+    font-size: 24px; 
+} 
+.divs-cnt{ 
+    width: 100%;
+    height: 100%; 
+    display: flex; 
+    flex-wrap:wrap;
+    align-items: center; 
+    gap: 20px; 
+    /* justify-content: center;  */
+} 
+.info{ 
+    height: 30%; 
+    width: 30%; 
+    background-color: #758cf2; 
+    border-radius: 16px;
+ } 
+#line{ 
+    width: 200px; 
+    height: 0px; 
+    border: 1px solid lightgray; 
+    margin: auto; 
+    margin-bottom: 30px;
+ } 
+#icon{ 
+    height: 200px; 
+    width: 200px; 
+    margin: auto; 
+    object-fit: cover; 
+} 
+#day, #time{ 
+    display: inline-block; 
+}
+input{ 
+    width: 70%; 
+    padding: 8px 0px 8px 0px; 
+    border: none; 
+    background-color: #edeeee; 
+    border-radius: 18px;
+    padding-left: 16px; 
+    outline: none; 
+} 
+#temp{ 
+    font-size: 46px; 
+} 
+#city{ 
+    font-size: 24px; 
+} 
+.property, .data{ 
+    margin: 25px 0px 0px 25px; 
+    color: white; 
+    line-height: 25px; 
+} 
+.property{ 
+    font-size: 20px; 
+} 
+.data{ 
+    font-size: 30px; 
+}
+
+@media (max-width: 900px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .weather-info,
+    .other-factors {
+        padding: 40px 0 40px 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .divs-cnt {
+        width: 100%;
+        flex-wrap:wrap;
+        gap:20px;
+        height:auto;
+    }
+
+    .info {
+        width: 100%;
+        height:140px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .info {
+        width: 80%;
+    }
+
+    .other-factors {
+        padding: 30px 0 30px 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .divs-cnt{
+        justify-content:center;
+    }
+
+    .factors-cnt{ 
+        margin:0;
+    }
+
+    #icon {
+        width: 150px;
+        height: 150px;
+    }
+
+    #temp {
+        font-size: 36px;
+    }
+
+    #city {
+        font-size: 20px;
+    }
+
+    #today{
+        text-align:center;
+    }
+
+    input {
+        width: 90%;
+    }
+}
